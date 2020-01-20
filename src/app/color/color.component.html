@@ -9,6 +9,20 @@
   #inputColor
   (change)="changeColor(inputColor.value)"
 >
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="color"
+>
 <button (click)="reset()" class="btn btn-dark">
   rest color
 </button>
+
+<p>
+  Bonjour
+</p>
+
+<input type="text" [(ngModel)]="name" class="form-control">
+<p (click)="resetName()">
+  my name is {{name}}
+</p>
