@@ -11,8 +11,15 @@ export class FirstComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    setInterval(() => {
-      this.isHidden = ! this.isHidden;
-    }, 2000);
+    // setInterval(() => {
+    //   this.isHidden = ! this.isHidden;
+    // }, 2000);
+  }
+  showHide() {
+    this.isHidden = ! this.isHidden;
+  }
+
+  showMessage(monInput) {
+    console.log(monInput);
   }
 }

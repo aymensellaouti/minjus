@@ -1,0 +1,14 @@
+<div
+  [style.backgroundColor]="color">
+  Test color
+</div>
+
+<input
+  type="color"
+  class="form-control"
+  #inputColor
+  (change)="changeColor(inputColor.value)"
+>
+<button (click)="reset()" class="btn btn-dark">
+  rest color
+</button>

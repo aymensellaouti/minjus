@@ -1,7 +1,17 @@
 <p
-
   [hidden]="isHidden"
 
 >first works!</p>
 
 hello {{name}}
+
+<input type="text" #monInput>
+
+<button (click)="showMessage(monInput.value)" class="btn btn-success">
+  show message
+</button>
+
+
+<button (click)="showHide()" class="btn btn-primary">
+  hide / show
+</button>
