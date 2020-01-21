@@ -14,6 +14,10 @@ import { CvComponent } from './cv/cv/cv.component';
 import { ListComponent } from './cv/list/list.component';
 import { ItemComponent } from './cv/item/item.component';
 import { DetailComponent } from './cv/detail/detail.component';
+import { NgStyleComponent } from './directives/ng-style/ng-style.component';
+import { WordComponent } from './directives/word/word.component';
+import { LampeComponent } from './directives/lampe/lampe.component';
+import { NgClassComponent } from './directives/ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { DetailComponent } from './cv/detail/detail.component';
     CvComponent,
     ListComponent,
     ItemComponent,
-    DetailComponent
+    DetailComponent,
+    NgStyleComponent,
+    WordComponent,
+    LampeComponent,
+    NgClassComponent
   ],
   imports: [
     BrowserModule,

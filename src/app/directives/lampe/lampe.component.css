@@ -1,0 +1,14 @@
+div {
+  background-color: white;
+  border: 1px black solid;
+  color: black;
+  width: 150px;
+  height: 150px;
+  padding: 50px
+;
+}
+.lampe {
+  background-color: yellow;
+  color: black;
+}
+

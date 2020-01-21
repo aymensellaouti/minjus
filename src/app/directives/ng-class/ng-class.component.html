@@ -1,0 +1,13 @@
+<select
+  class="form-control" [(ngModel)]="choix">
+  <option value="class1">choix 1 </option>
+  <option value="class2">choix 2 </option>
+  <option value="class3">choix 3 </option>
+</select>
+<p [ngClass]="{
+  'class1': choix === 'class1',
+  'class2': choix === 'class2',
+  'class3': choix === 'class3'
+}">
+  ng-class works!
+</p>
