@@ -25,6 +25,8 @@ import { DefaultImagePipe } from './pipes/default-image.pipe';
 import {LoggerService} from './services/logger.service';
 import { TodoComponent } from './todo/todo.component';
 import { EmbaucheComponent } from './cv/embauche/embauche.component';
+import { FakeFormComponent } from './fake-form/fake-form.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { EmbaucheComponent } from './cv/embauche/embauche.component';
     FirstPipe,
     DefaultImagePipe,
     TodoComponent,
-    EmbaucheComponent
+    EmbaucheComponent,
+    FakeFormComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

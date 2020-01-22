@@ -1,0 +1,20 @@
+<form #formulaire="ngForm">
+  <input
+    required
+    ngModel
+    name="name"
+    type="text"
+    class="form-control">
+  <input
+    ngModel
+    required
+    email
+    name="email"
+    type="text"
+    class="form-control">
+</form>
+<button
+  (click)="processForm(formulaire)"
+  class="btn btn-dark">
+  process form
+</button>
