@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Personne} from '../../Model/personne';
+import {EmbaucheService} from '../services/embauche.service';
 
 @Component({
   selector: 'app-detail',
@@ -8,9 +9,15 @@ import {Personne} from '../../Model/personne';
 })
 export class DetailComponent implements OnInit {
   @Input() personne: Personne;
-  constructor() { }
+  constructor(
+    private embaucheService: EmbaucheService
+  ) { }
 
   ngOnInit() {
   }
-
+  embaucher() {
+    if (!this.embaucheService.embaucher(this.personne)) {
+      alert (`${this.personne.name} est déjà embauché`);
+    }
+  }
 }

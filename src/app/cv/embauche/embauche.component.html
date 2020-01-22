@@ -1,0 +1,14 @@
+<div *ngIf="personnes.length">
+  <h2>Liste des personnes pré sélectionnées : </h2>
+<div id="embauche">
+  <span *ngFor="let personne of personnes">
+      <img src="assets/images/{{personne?.path|defaultImage}}"
+           alt="{{personne?.name}}"
+           width="150px"
+           height="150px"
+           class="rounded-circle"
+      >
+    {{personne.firstname}} {{personne.name}}
+  </span>
+</div>
+</div>
