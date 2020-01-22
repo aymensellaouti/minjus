@@ -3,6 +3,9 @@
     <app-list (forwardPersonne)="selectItem($event)"></app-list>
   </div>
   <div class="col-md-6">
-    <app-detail [personne]="selectedPersonne"></app-detail>
+    <app-detail
+      [personne]="selectedPersonne"
+      *ngIf="selectedPersonne">
+    </app-detail>
   </div>
 </div>

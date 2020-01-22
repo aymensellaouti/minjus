@@ -1,3 +1,4 @@
+<input type="text"  appRainbow class="form-control">
 <select
   class="form-control" [(ngModel)]="choix">
   <option value="class1">choix 1 </option>
@@ -11,3 +12,12 @@
 }">
   ng-class works!
 </p>
+<div appHighlight>
+  Test directive
+</div>
+<div [in]="'blue'"
+     [out]="'black'"
+     appHighlight
+>
+  Test directive
+</div>

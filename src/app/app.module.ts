@@ -18,6 +18,9 @@ import { NgStyleComponent } from './directives/ng-style/ng-style.component';
 import { WordComponent } from './directives/word/word.component';
 import { LampeComponent } from './directives/lampe/lampe.component';
 import { NgClassComponent } from './directives/ng-class/ng-class.component';
+import { HighlightDirective } from './directives/highlight.directive';
+import { RainbowDirective } from './directives/rainbow.directive';
+import { FirstPipe } from './pipes/first.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { NgClassComponent } from './directives/ng-class/ng-class.component';
     NgStyleComponent,
     WordComponent,
     LampeComponent,
-    NgClassComponent
+    NgClassComponent,
+    HighlightDirective,
+    RainbowDirective,
+    FirstPipe
   ],
   imports: [
     BrowserModule,
