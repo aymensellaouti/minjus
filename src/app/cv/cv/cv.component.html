@@ -1,12 +1,11 @@
 <div class="row">
   <div class="col-md-6">
-    <app-list (forwardPersonne)="selectItem($event)"></app-list>
+    <app-list></app-list>
+<!--    (forwardPersonne)="selectItem($event)"-->
   </div>
   <div class="col-md-6">
-    <app-detail
-      [personne]="selectedPersonne"
-      *ngIf="selectedPersonne">
-    </app-detail>
+    <!--      [personne]="selectedPersonne"-->
+    <app-detail></app-detail>
   </div>
 </div>
 <div class="row">

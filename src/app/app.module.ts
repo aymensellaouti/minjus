@@ -33,6 +33,8 @@ import { AddPersonneComponent } from './cv/add-personne/add-personne.component';
 import { DetailPersonneComponent } from './cv/detail-personne/detail-personne.component';
 import { FrontComponent } from './front/front.component';
 import { BackComponent } from './back/back.component';
+import { NF404Component } from './nf404/nf404.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import { BackComponent } from './back/back.component';
     AddPersonneComponent,
     DetailPersonneComponent,
     FrontComponent,
-    BackComponent
+    BackComponent,
+    NF404Component,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
