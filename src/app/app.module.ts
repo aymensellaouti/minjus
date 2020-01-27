@@ -27,6 +27,8 @@ import { TodoComponent } from './todo/todo.component';
 import { EmbaucheComponent } from './cv/embauche/embauche.component';
 import { FakeFormComponent } from './fake-form/fake-form.component';
 import { LoginComponent } from './login/login.component';
+import { HeaderComponent } from './header/header.component';
+import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { LoginComponent } from './login/login.component';
     TodoComponent,
     EmbaucheComponent,
     FakeFormComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent,
+    RouterSimulatorComponent
   ],
   imports: [
     BrowserModule,
