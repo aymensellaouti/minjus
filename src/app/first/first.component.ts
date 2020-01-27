@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-first',
@@ -8,12 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class FirstComponent implements OnInit {
   name = 'aymen';
   isHidden = true;
-  constructor() { }
+  constructor(
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit() {
     // setInterval(() => {
     //   this.isHidden = ! this.isHidden;
     // }, 2000);
+    this.activatedRoute.params.subscribe(
+       (mesParametres) => {
+        console.log(mesParametres);
+      }
+    );
   }
   showHide() {
     this.isHidden = ! this.isHidden;

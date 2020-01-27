@@ -29,6 +29,10 @@ import { FakeFormComponent } from './fake-form/fake-form.component';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import { AddPersonneComponent } from './cv/add-personne/add-personne.component';
+import { DetailPersonneComponent } from './cv/detail-personne/detail-personne.component';
+import { FrontComponent } from './front/front.component';
+import { BackComponent } from './back/back.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +60,11 @@ import { RouterSimulatorComponent } from './router-simulator/router-simulator.co
     FakeFormComponent,
     LoginComponent,
     HeaderComponent,
-    RouterSimulatorComponent
+    RouterSimulatorComponent,
+    AddPersonneComponent,
+    DetailPersonneComponent,
+    FrontComponent,
+    BackComponent
   ],
   imports: [
     BrowserModule,
