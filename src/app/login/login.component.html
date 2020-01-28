@@ -22,7 +22,11 @@
     minlength="4"
     class="form-control">
 </form>
+<div *ngIf="errorMessage" class="alert alert-danger">
+  {{errorMessage}}
+</div>
 <button
+  (click)="login(loginForm.value)"
   [disabled]="loginForm.invalid"
   class="btn btn-dark">
   Login

@@ -10,15 +10,22 @@ import {FrontComponent} from './front/front.component';
 import {BackComponent} from './back/back.component';
 import {CardComponent} from './card/card.component';
 import {NF404Component} from './nf404/nf404.component';
+import {LoginComponent} from './login/login.component';
+import {AuthGuard} from './guards/auth.guard';
 
 
 const routes: Routes = [
 
   {path: '', component: FrontComponent,
     children: [
+      {path: 'login', component: LoginComponent },
       {path: 'cv', children: [
           {path: '', component: CvComponent},
-          {path: 'add', component: AddPersonneComponent},
+          {
+            path: 'add',
+            component: AddPersonneComponent,
+            canActivate: [AuthGuard]
+          },
           {path: ':id', component: DetailPersonneComponent},
         ]},
       {path: 'todo', component: TodoComponent},

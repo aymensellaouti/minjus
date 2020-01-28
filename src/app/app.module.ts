@@ -37,6 +37,7 @@ import { NF404Component } from './nf404/nf404.component';
 import { ObservableComponent } from './observable/observable.component';
 import { HttpComponent } from './http/http.component';
 import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTOR_PROVIDER} from './interceptors/auth-interceptor';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,7 @@ import {HttpClientModule} from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [HTTP_INTERCEPTOR_PROVIDER],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
