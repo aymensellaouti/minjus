@@ -1,3 +1,12 @@
 <app-header></app-header>
-<app-http></app-http>
+<input (change)="selectFile($event)" type="file">
+<button class="btn btn-simple" (click)="upload()">Upload</button>
+<ol>
+  <li *ngFor="let personne of personnes">
+    {{personne.firstname}}
+    <img src="{{personne.profile.filePath}}" alt="{{personne.profile.filePath}}">
+  </li>
+</ol>
+<!--<app-charts></app-charts>-->
+<!--<app-google-charts></app-google-charts>-->
 <router-outlet></router-outlet>

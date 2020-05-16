@@ -13,7 +13,6 @@ import {NF404Component} from './nf404/nf404.component';
 import {LoginComponent} from './login/login.component';
 import {AuthGuard} from './guards/auth.guard';
 
-
 const routes: Routes = [
 
   {path: '', component: FrontComponent,

@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
+  "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "minjus": {
+    "file-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,12 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/minjus",
+            "outputPath": "dist/file-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -41,7 +41,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -60,24 +59,21 @@
             }
           }
         },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
-        },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "minjus:build"
+            "browserTarget": "file-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "minjus:build:production"
+              "browserTarget": "file-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "minjus:build"
+            "browserTarget": "file-app:build"
           }
         },
         "test": {
@@ -94,9 +90,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/chartjs/dist/Chart.js"
-            ]
+            "scripts": []
           }
         },
         "lint": {
@@ -116,20 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "minjus:serve"
+            "devServerTarget": "file-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "minjus:serve:production"
+              "devServerTarget": "file-app:serve:production"
             }
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {}
         }
       }
-    }
-  },
-  "defaultProject": "minjus"
+    }},
+  "defaultProject": "file-app"
 }

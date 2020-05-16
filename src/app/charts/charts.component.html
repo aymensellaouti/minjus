@@ -1,0 +1,14 @@
+
+<div #file>
+  <p
+    (click)="updateData()"
+  >charts works!</p>
+  <p-chart #chart (onDataSelect)="getData($event)" type="doughnut" [data]="data"></p-chart>
+
+  <button
+    (click)="getPdf(file)"
+    class="btn btn-primary">
+    pdf
+  </button>
+
+</div>

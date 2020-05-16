@@ -38,6 +38,11 @@ import { ObservableComponent } from './observable/observable.component';
 import { HttpComponent } from './http/http.component';
 import {HttpClientModule} from '@angular/common/http';
 import {HTTP_INTERCEPTOR_PROVIDER} from './interceptors/auth-interceptor';
+import { ChartsComponent } from './charts/charts.component';
+import {ChartModule} from 'primeng/chart';
+import {TableModule} from 'primeng/table';
+import {GoogleChartsModule} from 'angular-google-charts';
+import { GoogleChartsComponent } from './google-charts/google-charts.component';
 
 @NgModule({
   declarations: [
@@ -72,13 +77,18 @@ import {HTTP_INTERCEPTOR_PROVIDER} from './interceptors/auth-interceptor';
     BackComponent,
     NF404Component,
     ObservableComponent,
-    HttpComponent
+    HttpComponent,
+    ChartsComponent,
+    GoogleChartsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ChartModule,
+    TableModule,
+    GoogleChartsModule
   ],
   providers: [HTTP_INTERCEPTOR_PROVIDER],
   bootstrap: [AppComponent]
